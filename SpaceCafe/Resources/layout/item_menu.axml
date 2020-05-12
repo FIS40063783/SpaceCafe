@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/space_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/imageView1" />
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hot food" />
+    <HorizontalScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hot_food_category">
+       
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hot_food_options">
+            <Button
+                android:text="Hamburger"
+                android:layout_width="120.0dp"
+                android:layout_height="89dp"
+                android:id="@+id/burger_button"
+                android:background="@drawable/burger"
+                android:layout_marginBottom="0.0dp"
+                android:textColor="#ffffff" 
+                android:textStyle="bold" />
+            <Button
+                android:text="Sausage bap"
+                android:layout_width="120.0dp"
+                android:layout_height="89dp"
+                android:id="@+id/sausage_bap_button"
+                android:background="@drawable/sausage_bap"
+                android:layout_marginBottom="0.0dp"
+                android:textColor="#ffffff" 
+                android:textStyle="bold" />
+            <Button
+                android:text="sausage rolls"
+                android:layout_width="120.0dp"
+                android:layout_height="89dp"
+                android:id="@+id/sausage_roll_button"
+                android:background="@drawable/sausage_roll"
+                android:layout_marginBottom="0.0dp"
+                android:textColor="#ffffff" 
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

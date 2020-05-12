@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:foregroundGravity="center">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/space_logo" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/linearLayout1">
+            <Button
+                android:text="View Items"
+                android:layout_width="130.5dp"
+                android:layout_height="96.0dp"
+                android:id="@+id/view_items"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_margin="15dp"/>
+            <Button
+                android:text="Cart"
+                android:layout_width="126.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/cart_button"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_margin="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:gravity="center"
+            android:id="@+id/linearLayout2">
+            <Button
+                android:text="Help"
+                android:layout_width="130.0dp"
+                android:layout_height="99.5dp"
+                android:id="@+id/help_button"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_margin="15dp"/>
+            <Button
+                android:text="About"
+                android:layout_width="125.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/about_button"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="20sp" 
+                android:layout_margin="15dp" />
+
+           
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:gravity="center"
+            android:id="@+id/thirdRow">
+             <Button
+                android:text="Contact"
+                android:layout_width="125.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/contact_button"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="20sp" 
+                android:layout_margin="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

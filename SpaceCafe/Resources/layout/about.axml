@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imageCarousel" 
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_alignParentTop="true" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imageCarousel"
+    android:scrollbars="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SPACE Cafe is located in the heart of the SPACE campus in SERC Bangor, providing high-quality food and drink to students and staff alike for a low cost. Using  this app, students can pre-order beverages or food for the future, making receiving their refreshments from SPACE Cafe more cvonvenient than ever before." 
+        android:textSize="@dimen/abc_action_bar_content_inset_material"/>
+    </ScrollView>
+
+</RelativeLayout>

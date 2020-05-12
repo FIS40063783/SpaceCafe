@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/space_logo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:hint="E-mail"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hapticFeedbackEnabled="false"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:singleLine="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_password"
+        android:hapticFeedbackEnabled="false"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="placeholder"
+        android:id="@+id/signup_error"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#c60505"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:id="@+id/send_to_login"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_margin="15dp" />
+    <Button
+        android:text="Create Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_account"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_margin="15dp"/>
+</LinearLayout>

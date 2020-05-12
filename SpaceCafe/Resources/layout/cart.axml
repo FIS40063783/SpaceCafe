@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shopping_cart">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvOrders"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:id="@+id/cartInfo">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalCost" 
+            android:text="£0"/>
+        <Button
+            android:text="Purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPurchase"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+</LinearLayout>
